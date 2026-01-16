@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal portfolio website - Pavan G P</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/92e2d85a97.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <link rel="shortcut icon" href="images/logo1.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body><!-- Intro / splash screen -->
+<div id="intro-screen">
+  <img src="images/logo1.png" alt="Pavan GP logo" class="intro-logo">
+</div>
+
+<!-- fixed navbar + hero (HOME ONLY) -->
+<header id="header">
+  <div class="container">
+
+    <nav class="navbar">
+      <!-- Logo -->
+      <a href="#header">
+        <img src="images/logo1.png" class="logo" alt="Pavan GP logo">
+      </a>
+
+      <!-- Hamburger menu (MOBILE) -->
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Navigation -->
+      <ul id="navMenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Projects</a></li>
+        <li><a href="#internship">Internship</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+        <!-- Social icons -->
+        <li class="nav-social">
+          <a href="https://www.linkedin.com/in/pavan-gp/"
+             target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+
+        <li class="nav-social">
+          <a href="https://github.com/pavan-gp"
+             target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- HERO CONTENT -->
+    <div class="header-content">
+      <div class="header-text">
+        <p class="tagline">Developer • AI Enthusiast • Designer</p>
+
+        <h1 class="main-title">
+          Hi I'm, <span class="name">Pavan G P</span>
+        </h1>
+
+        <h1 class="role">
+          <span class="text"></span>
+        </h1>
+
+        <h2 class="location">
+          From Bengaluru, India <span class="loc">📌</span>
+        </h2>
+
+        <p class="intro">
+          Building clean web experiences and AI-powered applications with modern technologies.
+        </p>
+
+        <div class="buttons">
+          <a href="images/pavanCV.pdf"
+             class="btn primary-btn"
+             target="_blank" rel="noopener">
+            Download CV
+          </a>
+
+          <a href="#work" class="btn secondary-btn">
+            View Projects
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+      
+  <!-- ----------------------------about---------------------------------------- -->
+  <section id="about" class="page-section">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/imgg.jpeg" alt="Pavan profile">
+        </div>
+        <div class="about-col-2">
+  <h1 class="sub-title">About Me</h1>
+  <p class="about-text">
+    I am Pavan G P, a Computer Science and Design student from Bengaluru who enjoys building clean,
+    responsive web interfaces and experimenting with modern frontend tools like HTML, CSS, JavaScript
+    and React. I also explore AI and Python development, creating hands‑on projects and a polished
+    portfolio while actively looking for opportunities to learn, collaborate and grow as a developer.
+  </p>
+
+  <!-- JS-driven wireframe panel -->
+  <div class="about-panel">
+    <div class="about-tab-header">
+      <button class="about-tab active" data-tab="experience">Experience</button>
+      <button class="about-tab" data-tab="education">Education</button>
+      <div class="about-tab-indicator"></div>
+    </div>
+
+    <div class="about-tab-body">
+      <!-- EXPERIENCE -->
+      <div class="about-tab-content active" id="tab-experience">
+        <div class="about-timeline">
+
+          <!-- 1. Internship (from Pantech letter) -->
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+              <h4>Pantech Prolabs – Internship</h4>
+              <p>
+                Selected for a 3‑month online internship focused on hands‑on project work,
+                learning new tools and contributing to real client‑oriented solutions.
+              </p>
+            </div>
+          </div>
+
+          <!-- 2. Collaboration (from Des|X|gn club certificate) -->
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+              <h4>Des|X|ign Club – Events Team</h4>
+              <p>
+                Member of the Events Management Team, helping organize and coordinate
+                design and tech events on campus.
+              </p>
+            </div>
+          </div>
+
+          <!-- 3. Personal projects -->
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+              <h4>Personal Projects</h4>
+              <p>
+                Portfolio website, AI‑powered mini projects and UI prototypes built with
+                modern web and Python tools.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- EDUCATION -->
+      <div class="about-tab-content" id="tab-education">
+        <ul class="about-edu-list">
+          <li>
+            <span class="edu-tag">B.E.</span>
+            <div>
+              <h4>Computer Science &amp; Design</h4>
+              <p>SJC Institute of Technology, Bengaluru</p>
+            </div>
+          </li>
+          <li>
+            <span class="edu-tag">PU</span>
+            <div>
+              <h4>Pre‑University</h4>
+              <p>Leaders' PU College</p>
+            </div>
+          </li>
+          <li>
+            <span class="edu-tag">10th</span>
+            <div>
+              <h4>School</h4>
+              <p>SMT Stella Convent</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- =================== Skills =================== -->
+<section id="skills" class="page-section">
+  <div class="container skills-flex">
+    <div class="skills-left">
+      <h2 class="skills-title">Skills</h2>
+      <p class="skills-text">
+        Technologies used to build fast, responsive web interfaces and AI‑powered projects,
+        combining modern frontend stacks with Python‑based automation and clean design tools.
+      </p>
+
+      <div class="skills-badges">
+        <button class="skill-badge active" data-skill="html">
+          <span class="badge-icon html-icon">HTML</span>
+          <span class="badge-label">HTML</span>
+        </button>
+        <button class="skill-badge" data-skill="css">
+          <span class="badge-icon css-icon">CSS</span>
+          <span class="badge-label">CSS</span>
+        </button>
+        <button class="skill-badge" data-skill="js">
+          <span class="badge-icon js-icon">JS</span>
+          <span class="badge-label">JavaScript</span>
+        </button>
+        <button class="skill-badge" data-skill="react">
+          <span class="badge-icon react-icon">⚛</span>
+          <span class="badge-label">React.js</span>
+        </button>
+        <button class="skill-badge" data-skill="python">
+          <span class="badge-icon py-icon">Py</span>
+          <span class="badge-label">Python</span>
+        </button>
+        <button class="skill-badge" data-skill="tools">
+          <span class="badge-icon tools-icon">⌘</span>
+          <span class="badge-label">Figma &amp; VS Code</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="skills-right">
+      <div class="skills-card">
+        <div class="skills-card-header">
+          <h3 id="skill-name">HTML</h3>
+          <div class="skill-dots" id="skill-dots">
+            <span class="dot filled"></span>
+            <span class="dot filled"></span>
+            <span class="dot filled"></span>
+            <span class="dot filled"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+        <p id="skill-desc">
+          Semantic, accessible structure for modern web pages, forms and layouts that keeps every
+          project maintainable and SEO‑friendly.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- -------------------------------Services---------------------------- -->
+<section class="services-glow" id="services">
+  <div class="services-glow-inner">
+    <h2 class="services-glow-title">My Services</h2>
+
+    <p class="services-glow-subtitle shimmer-text">
+      Clean web experiences and AI‑powered products with a focus on performance,
+      detail, accessibility, and long‑term maintainability.
+    </p>
+
+    <div class="services-glow-grid">
+      <article class="services-glow-card">
+        <div class="services-glow-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <h3 class="services-glow-name">Web Development</h3>
+        <p class="services-glow-text">
+          Modern, responsive websites with optimized performance, animations,
+          and accessibility.
+        </p>
+      </article>
+
+      <article class="services-glow-card">
+        <div class="services-glow-icon">
+          <i class="fas fa-layer-group"></i>
+        </div>
+        <h3 class="services-glow-name">UI / UX Design</h3>
+        <p class="services-glow-text">
+          Intuitive product flows, wireframes, and interface systems for web
+          and mobile.
+        </p>
+      </article>
+
+      <article class="services-glow-card">
+        <div class="services-glow-icon">
+          <i class="fas fa-mobile-alt"></i>
+        </div>
+        <h3 class="services-glow-name">App Interfaces</h3>
+        <p class="services-glow-text">
+          Mobile‑first layouts for Android / iOS with smooth transitions and
+          clear hierarchy.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+<!-- --------------------------------projects---------------------------------------------- -->
+<section class="work" id="work">
+  <div class="work-inner">
+    <h2 class="work-title">My Work</h2>
+    <p class="work-subtitle">
+      A few recent projects crafted with clean UI, smooth interaction, and real-world impact.
+    </p>
+
+    <div class="work-grid">
+
+      <!-- Project 1 -->
+      <article class="work-card">
+        <div class="work-img-wrap">
+          <img src="images/krishi-kalyan.png" alt="Krishi Kalyan Project">
+        </div>
+
+        <div class="work-info">
+          <span class="work-pill">Web Portal</span>
+          <h3 class="work-name">Krishi Kalyan</h3>
+          <p class="work-desc">
+            Government agriculture portal empowering farmers with schemes and resources.
+          </p>
+
+          <a href="https://pavan-gp.github.io/Agriculture_Government_Webportal/"
+             target="_blank"
+             class="work-cta">
+            View Live
+            <span class="work-cta-line"></span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="work-card">
+        <div class="work-img-wrap">
+          <img src="images/SGPA-Calculator-2.webp" alt="SGPA Calculator">
+        </div>
+
+        <div class="work-info">
+          <span class="work-pill">Utility Tool</span>
+          <h3 class="work-name">SGPA Calculator</h3>
+          <p class="work-desc">
+            Student-friendly tool to calculate semester grades quickly and accurately.
+          </p>
+
+          <span class="work-cta disabled">
+            Coming Soon
+          </span>
+        </div>
+      </article>
+
+      <!-- Project 3 (Empty) -->
+      <article class="work-card empty-card">
+        <div class="empty-box">
+          <span>+</span>
+          <p>Next Project</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ----------------------------------------------------------Internship----------------------------------------------------------- -->
+
+
+
+<section class="internship" id="internship">
+  <div class="internship-wrap">
+    <h2 class="internship-title">Internship</h2>
+    <p class="internship-subtitle">
+      Three‑month internship focused on building real interfaces, learning team workflows,
+      and shipping to production.
+    </p>
+
+    <article class="internship-card">
+      <div class="internship-image">
+        <img src="images/internship.png" alt="Internship letter preview" />
+      </div>
+
+      <div class="internship-info">
+        <span class="internship-chip">2025 • Web Developer Intern</span>
+        <h3 class="internship-role">Pantech Prolabs India Pvt Ltd</h3>
+        <p class="internship-location">Remote • Bengaluru, India</p>
+
+        <p class="internship-text">
+          Worked on responsive layouts, reusable components, and API‑driven pages while
+          collaborating with designers and backend engineers.
+        </p>
+
+        <ul class="internship-points">
+          <li>Modern UI with HTML, CSS, and JavaScript.</li>
+          <li>Performance, accessibility, and design consistency.</li>
+          <li>Git‑based workflow with code reviews.</li>
+        </ul>
+
+        <a href="images/internship.pdf"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="internship-link-btn">
+          View internship letter
+        </a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- -----------------------------------Contact---------------------------------------------------- -->
+<!-- CONTACT SECTION -->
+<section class="contact" id="contact">
+  <div class="contact-shell">
+    <div class="contact-header">
+      <h2 class="contact-title">Let’s work together</h2>
+      <p class="contact-subtitle">
+        Have a project, idea, or opportunity? Drop a message or reach out on your favorite platform.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+      <!-- Form -->
+      <form class="contact-form" id="contactForm">
+        <div class="field">
+          <label for="name">Name</label>
+          <div class="field-input">
+            <i class="fa-regular fa-user"></i>
+            <input type="text" id="name" name="name" placeholder="Your full name" required />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <div class="field-input">
+            <i class="fa-regular fa-envelope"></i>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <div class="field-input field-textarea">
+            <i class="fa-regular fa-comment-dots"></i>
+            <textarea id="message" name="message" rows="4"
+                      placeholder="Tell me a bit about what you’re looking for"></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="contact-btn">
+          Send message
+        </button>
+
+        <!-- success / error text -->
+        <p class="contact-status" id="contactStatus"></p>
+      </form>
+
+      <!-- Info + socials -->
+      <div class="contact-info">
+        <div class="contact-card">
+          <h3>Direct contact</h3>
+
+          <div class="info-row">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:6363144103">+91 63631 44103</a>
+          </div>
+
+          <div class="info-row">
+            <i class="fa-regular fa-envelope"></i>
+            <a href="mailto:pavangp3010@gmail.com">pavangp3010@gmail.com</a>
+          </div>
+
+          <h4 class="social-title">Social profiles</h4>
+          <div class="social-row">
+            <a href="https://www.instagram.com/_pavan_3_0?igsh=bzd3czM0eWNmemty"
+               class="social-icon ig"
+               aria-label="Instagram"
+               target="_blank"
+               rel="noopener noreferrer">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/pavan-gp/"
+               class="social-icon li"
+               aria-label="LinkedIn"
+               target="_blank"
+               rel="noopener noreferrer">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="https://github.com/pavan-gp"
+               class="social-icon gh"
+               aria-label="GitHub"
+               target="_blank"
+               rel="noopener noreferrer">
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.facebook.com/share/1G4ZqswJjh/"
+               class="social-icon fb"
+               aria-label="Facebook"
+               target="_blank"
+               rel="noopener noreferrer">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </div>
+
+          <p class="contact-note">
+            Usually responds within a day. Happy to talk about internships, freelance work, or collaborations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCRIPT: send to Google Sheet + show message -->
+<script>
+  
+  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxXHi-BVjLtqOREdwi8HuvscIXULSPi0Jt6sN-9wBB0aAQaYrYdNdekIpZbUO7Zkkvt/exec";
+
+  const form = document.getElementById("contactForm");
+  const statusEl = document.getElementById("contactStatus");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const formData = {
+      name: form.name.value.trim(),
+      email: form.email.value.trim(),
+      message: form.message.value.trim(),
+    };
+
+    if (!formData.name || !formData.email || !formData.message) {
+      statusEl.textContent = "Please fill out all fields.";
+      statusEl.className = "contact-status error";
+      return;
+    }
+
+    statusEl.textContent = "Sending...";
+    statusEl.className = "contact-status";
+
+    try {
+      await fetch(SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      form.reset();
+      statusEl.textContent = "Message sent successfully. Thank you!";
+      statusEl.className = "contact-status success";
+
+      setTimeout(() => {
+        statusEl.textContent = "";
+        statusEl.className = "contact-status";
+      }, 4000);
+    } catch (err) {
+      console.error(err);
+      statusEl.textContent = "Something went wrong. Please try again.";
+      statusEl.className = "contact-status error";
+    }
+  });
+</script>
+
+<!-- -------------------------------footer---------------------------------------------- -->
+
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-left">
+      © 2025 Pavan G P All rights reserved.
+    </p>
+
+    
+</footer>
+
+
+
+  <script src="main.js"></script>
+  <script src="intro.js"></script>
+  <script src="about-tabs.js"></script>
+  <script src="skills-ui.js"></script>
+  <script src="shimmer.js"></script>
+  <script src="projects.js"></script>
+  <script src="projects-modal.js"></script>
+  <script src="portfolio-modal.js"></script>
+  <script src="mobile-menu.js"></script>
+
+ 
+
+
+  
+</body>
+</html>
